@@ -1,0 +1,17 @@
+[prevPainting]
+other = "Предыдущая картина"
+
+[nextPainting]
+other = "Следующая картина"
+
+[backToGallery]
+other = "Назад в галерею"
+
+[share]
+other = "Поделиться"
+
+[copied]
+other = "Скопировано"
+
+[storedAt]
+other = "Хранится"

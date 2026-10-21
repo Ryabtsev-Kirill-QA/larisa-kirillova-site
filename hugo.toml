@@ -1,0 +1,57 @@
+baseURL = "https://kirillova-larisa.ru/"
+languageCode = "ru-ru"
+title = "Кириллова Лариса Николаевна"
+theme = "PaperMod"
+
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = true
+
+enableRobotsTXT = true
+
+[languages]
+  [languages.ru]
+    contentDir = "content/ru"
+    languageName = "Русский"
+    weight = 1
+    title = "Кириллова Лариса Николаевна"
+
+    [languages.ru.menu]
+      [[languages.ru.menu.main]]
+        name = "Биография"
+        url = "/"
+        weight = 1
+      [[languages.ru.menu.main]]
+        name = "Галерея"
+        url = "/paintings/"
+        weight = 2
+
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 2
+    title = "Kirillova Larisa"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Biography"
+        url = "/en/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Gallery"
+        url = "/en/paintings/"
+        weight = 2
+
+[params]
+  env = "production"
+  description = "Персональный сайт художника Кирилловой Ларисы Николаевны"
+
+  [params.assets]
+    favicon = "assets/favicon.ico"
+
+  [params.schema]
+    publisherType = "Person"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,14 @@
+---
+title: "Т.К. Коломиец.\nГенерал-майор, командующий 51-й армией"
+date: 1983-01-01
+year: "1983"
+weight: 420
+draft: false
+translationKey: "kolonietz"
+cover:
+    image: "images/paintings/kolonietz.jpg"
+    alt: "Т.К.Коломиец. Генерал-майор, командующий 51-й армией."
+    relative: false
+technique: "Холст, масло"
+location: 'Музей-заповедник "Сталинградская битва"'
+---

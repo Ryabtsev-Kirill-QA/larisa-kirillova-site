@@ -1,0 +1,17 @@
+[prevPainting]
+other = "Previous painting"
+
+[nextPainting]
+other = "Next painting"
+
+[backToGallery]
+other = "Back to gallery"
+
+[share]
+other = "Share"
+
+[copied]
+other = "Copied"
+
+[storedAt]
+other = "Location"

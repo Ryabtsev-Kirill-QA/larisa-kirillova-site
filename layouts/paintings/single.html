@@ -1,0 +1,109 @@
+{{ define "main" }}
+  {{/* Явно вычисляем prev/next по тому же порядку, что и галерея */}}
+  {{ $pages := .CurrentSection.Pages.ByWeight }}
+  {{ $currentPath := .RelPermalink }}
+  {{ $prev := "" }}
+  {{ $next := "" }}
+  {{ range $i, $p := $pages }}
+    {{ if eq $p.RelPermalink $currentPath }}
+      {{ if gt $i 0 }}{{ $prev = index $pages (sub $i 1) }}{{ end }}
+      {{ if lt (add $i 1) (len $pages) }}{{ $next = index $pages (add $i 1) }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  <article class="painting-single">
+
+    <a href="{{ .CurrentSection.Permalink }}"
+   class="back-link"
+   data-tooltip="{{ i18n "backToGallery" }}"
+   aria-label="{{ i18n "backToGallery" }}">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 18 9 12 15 6"></polyline>
+  </svg>
+</a>
+
+    <header class="painting-header">
+      <h1 class="painting-title">{{ .Title }}</h1>
+
+      {{ $year := .Params.year }}
+      {{ if not $year }}{{ with .Date }}{{ $year = .Format "2006" }}{{ end }}{{ end }}
+
+      {{ $parts := slice }}
+      {{ with .Params.technique }}{{ $parts = $parts | append . }}{{ end }}
+      {{ with .Params.size }}{{ $parts = $parts | append . }}{{ end }}
+      {{ with $year }}{{ $parts = $parts | append . }}{{ end }}
+
+      {{ with $parts }}
+        <p class="painting-meta">{{ delimit . " · " }}</p>
+      {{ end }}
+    </header>
+
+    <div class="painting-image-wrap">
+      {{ with $prev }}
+        <a href="{{ .Permalink }}" class="nav-arrow nav-prev" aria-label="{{ i18n "prevPainting" }}">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </a>
+      {{ else }}
+        <span class="nav-arrow nav-prev nav-disabled"></span>
+      {{ end }}
+
+      <div class="painting-image">
+        {{ with .Params.cover.image }}
+          {{ partial "image.html" (dict "src" . "alt" ($.Params.cover.alt | default $.Title) "loading" "eager") }}
+        {{ end }}
+      </div>
+
+      {{ with $next }}
+        <a href="{{ .Permalink }}" class="nav-arrow nav-next" aria-label="{{ i18n "nextPainting" }}">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      {{ else }}
+        <span class="nav-arrow nav-next nav-disabled"></span>
+      {{ end }}
+    </div>
+
+    {{ with .Params.location }}
+      <p class="painting-location">
+        <span class="location-label">{{ i18n "storedAt" }}:</span> {{ . }}
+      </p>
+    {{ end }}
+
+    {{ with .Content }}
+      <div class="painting-description">{{ . }}</div>
+    {{ end }}
+
+    <div class="painting-share">
+      <span class="share-label">{{ i18n "share" }}:</span>
+      <a href="https://vk.com/share.php?url={{ .Permalink }}" target="_blank" rel="noopener">ВКонтакте</a>
+      <a href="https://t.me/share/url?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://wa.me/?text={{ .Title }}%20{{ .Permalink }}" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="copy-link" data-url="{{ .Permalink }}" data-copied="{{ i18n "copied" }}">
+        {{ i18n "copied" }}
+      </button>
+    </div>
+
+  </article>
+
+  <script>
+    document.querySelectorAll('.copy-link').forEach(function (btn) {
+      var original = btn.textContent;
+      btn.addEventListener('click', function () {
+        navigator.clipboard.writeText(btn.dataset.url).then(function () {
+          btn.textContent = btn.dataset.copied + ' ✓';
+          setTimeout(function () { btn.textContent = original; }, 1500);
+        });
+      });
+    });
+  </script>
+
+{{ end }}

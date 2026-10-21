@@ -1,0 +1,51 @@
+{{ define "main" }}
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+
+  <div class="gallery-grid">
+    {{ range .Pages.ByWeight }}
+      {{ $page := . }}
+      <a href="{{ .Permalink }}"
+         class="gallery-item"
+         data-title="{{ $page.Title }}"
+         onclick="sessionStorage.setItem('galleryScroll', window.scrollY); sessionStorage.setItem('fromGallery', '1');">
+        {{ with .Params.cover.image }}
+          {{ partial "image.html" (dict
+              "src" .
+              "alt" ($page.Params.cover.alt | default $page.Title)
+              "loading" "lazy"
+          ) }}
+        {{ end }}
+      </a>
+    {{ end }}
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Снимаем мерцание с загруженных картинок
+      document.querySelectorAll('.gallery-item img').forEach(function (img) {
+        var card = img.closest('.gallery-item');
+        if (!card) return;
+        function markLoaded() { card.classList.add('img-loaded'); }
+        if (img.complete && img.naturalHeight !== 0) {
+          markLoaded();
+        } else {
+          img.addEventListener('load', markLoaded, { once: true });
+          img.addEventListener('error', markLoaded, { once: true });
+        }
+      });
+
+      // 2. Восстанавливаем скролл при возврате из галереи
+      if (sessionStorage.getItem('fromGallery') === '1') {
+        var y = sessionStorage.getItem('galleryScroll');
+        if (y !== null) {
+          window.scrollTo(0, parseInt(y, 10));
+        }
+        sessionStorage.removeItem('fromGallery');
+        sessionStorage.removeItem('galleryScroll');
+      }
+    });
+  </script>
+{{ end }}
