@@ -1,5 +1,5 @@
 baseURL = "https://kirillova-larisa.ru/"
-languageCode = "ru-ru"
+locale = "ru-RU"
 title = "Кириллова Лариса Николаевна"
 theme = "PaperMod"
 
@@ -11,7 +11,7 @@ enableRobotsTXT = true
 [languages]
   [languages.ru]
     contentDir = "content/ru"
-    languageName = "Русский"
+    label = "Русский"
     weight = 1
     title = "Кириллова Лариса Николаевна"
 
@@ -27,7 +27,7 @@ enableRobotsTXT = true
 
   [languages.en]
     contentDir = "content/en"
-    languageName = "English"
+    label = "English"
     weight = 2
     title = "Kirillova Larisa"
 
