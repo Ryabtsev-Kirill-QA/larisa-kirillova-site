@@ -58,3 +58,5 @@ enableRobotsTXT = true
 
 [outputs]
   home = ["HTML", "RSS", "Sitemap"]
+
+disableKinds = ["taxonomy", "term"]
