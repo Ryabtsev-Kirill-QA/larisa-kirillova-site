@@ -5,7 +5,7 @@ draft: false
 translationKey: "tkach"
 cover:
     image: "images/paintings/tkach.jpg"
-    alt: "Без названия"
+    alt: "Портрет женщины за пряжей"
     relative: false
 technique: "Холст, масло"
 ---

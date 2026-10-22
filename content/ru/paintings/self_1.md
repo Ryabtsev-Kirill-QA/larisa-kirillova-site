@@ -5,7 +5,7 @@ draft: false
 translationKey: "self_1"
 cover:
     image: "images/paintings/self_1.jpg"
-    alt: "Без названия"
+    alt: "Портрет художницы в мастерской"
     relative: false
 technique: "Холст, масло"
 ---

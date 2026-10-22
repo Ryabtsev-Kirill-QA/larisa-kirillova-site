@@ -12,4 +12,5 @@ cover:
 technique: "Oil on canvas"
 size: "140×129"
 location: "Kuzbass Museum of Fine Arts"
+description: "'Portrait of V.M. Glinka' (1987) by Larisa Kirillova. A notable portrait of a contemporary, held in the collection of the Kuzbass Museum of Fine Arts."
 ---

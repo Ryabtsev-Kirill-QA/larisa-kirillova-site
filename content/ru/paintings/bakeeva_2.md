@@ -5,6 +5,6 @@ draft: false
 translationKey: "bakeeva_2"
 cover:
     image: "images/paintings/bakeeva_2.jpg"
-    alt: "Работа без названия"
+    alt: "Портрет женщины в свитере"
     relative: false
 ---

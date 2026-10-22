@@ -5,7 +5,7 @@ draft: false
 translationKey: "ozero"
 cover:
     image: "images/paintings/ozero.jpg"
-    alt: "Без названия"
+    alt: "Мать с ребенком у озера картина"
     relative: false
 technique: "Холст, масло"
 ---

@@ -12,4 +12,5 @@ cover:
 technique: "Oil on canvas"
 size: "106×73"
 location: "Udmurt Republican Museum of Fine Arts (Izhevsk)"
+description: "'Portrait of L.I. Bakeeva' (1979) by Larisa Kirillova, from the Udmurt Republican Museum of Fine Arts in Izhevsk. A notable female portrait reflecting the classical traditions of Russian realist painting."
 ---

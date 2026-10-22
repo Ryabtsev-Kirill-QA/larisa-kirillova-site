@@ -5,7 +5,7 @@ draft: false
 translationKey: "materinstvo"
 cover:
     image: "images/paintings/materinstvo.jpg"
-    alt: "Без названия"
+    alt: "Мать с ребенком на руках"
     relative: false
 technique: "Холст, масло"
 ---

@@ -5,6 +5,6 @@ draft: false
 translationKey: "pole_5"
 cover:
     image: "images/paintings/pole_5.jpg"
-    alt: "Без названия"
+    alt: "Отдых на поле"
     relative: false
 ---

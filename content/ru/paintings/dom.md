@@ -5,6 +5,6 @@ draft: false
 translationKey: "dom"
 cover:
     image: "images/paintings/dom.jpg"
-    alt: "Работа без названия"
+    alt: "Картина с северным домом"
     relative: false
 ---

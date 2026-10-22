@@ -5,6 +5,6 @@ draft: false
 translationKey: "zigan"
 cover:
     image: "images/paintings/zigan.jpg"
-    alt: "Без названия"
+    alt: "Картина с цыганом"
     relative: false
 ---

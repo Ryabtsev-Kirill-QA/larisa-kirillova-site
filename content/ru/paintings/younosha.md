@@ -5,6 +5,6 @@ draft: false
 translationKey: "younosha"
 cover:
     image: "images/paintings/younosha.jpg"
-    alt: "Без названия"
+    alt: "Портет мальчика в синем"
     relative: false
 ---

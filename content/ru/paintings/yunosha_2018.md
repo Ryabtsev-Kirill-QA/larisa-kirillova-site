@@ -7,7 +7,7 @@ draft: false
 translationKey: "yunosha_2018"
 cover:
     image: "images/paintings/yunosha_2018.jpg"
-    alt: "Юноша"
+    alt: "Портрет юноши в полный рост с кудрями"
     relative: false
 technique: "Холст, масло"
 description: "Поздняя работа Ларисы Кирилловой «Юноша», написанная в 2018 году. Демонстрирует эволюцию живописной манеры художницы."

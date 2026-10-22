@@ -11,4 +11,5 @@ cover:
     relative: false
 technique: "Oil on canvas"
 location: "National Gallery of the Komi Republic (Syktyvkar)"
+description: "'Happiness' (1987) by Larisa Kirillova, from the collection of the National Gallery of the Komi Republic. A mature work dedicated to the themes of motherhood and family values."
 ---

@@ -5,6 +5,6 @@ draft: false
 translationKey: "dasha"
 cover:
     image: "images/paintings/dasha.jpg"
-    alt: "Работа без названия"
+    alt: "Портрет девочки"
     relative: false
 ---

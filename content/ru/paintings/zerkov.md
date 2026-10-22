@@ -5,7 +5,7 @@ draft: false
 translationKey: "zerkov"
 cover:
     image: "images/paintings/zerkov.jpg"
-    alt: "Без названия"
+    alt: "Картина с церковью и коровой"
     relative: false
 technique: "Холст, масло"
 ---

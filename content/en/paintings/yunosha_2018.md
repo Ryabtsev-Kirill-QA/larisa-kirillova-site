@@ -10,4 +10,5 @@ cover:
     alt: "Young Man"
     relative: false
 technique: "Oil on canvas"
+description: "'Young Man' (2018) by Larisa Kirillova. A late work demonstrating the evolution of the artist's painterly style and her commitment to classical traditions."
 ---

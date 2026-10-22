@@ -5,6 +5,6 @@ draft: false
 translationKey: "devushki_1"
 cover:
     image: "images/paintings/devushki_1.jpg"
-    alt: "Работа без названия"
+    alt: "три девушки моются на даче"
     relative: false
 ---

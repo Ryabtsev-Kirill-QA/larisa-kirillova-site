@@ -5,6 +5,6 @@ draft: false
 translationKey: "kir_2"
 cover:
     image: "images/paintings/kir_2.jpg"
-    alt: "Работа без названия"
+    alt: "Профиль кудрявого юноши"
     relative: false
 ---

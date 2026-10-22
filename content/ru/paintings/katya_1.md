@@ -5,7 +5,7 @@ draft: false
 translationKey: "katya_1"
 cover:
     image: "images/paintings/katya_1.jpg"
-    alt: "Катя"
+    alt: "Катя, портрет дочери"
     relative: false
 technique: "Холст, масло"
 ---

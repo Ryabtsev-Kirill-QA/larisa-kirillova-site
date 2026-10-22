@@ -5,7 +5,7 @@ draft: false
 translationKey: "mat_1"
 cover:
     image: "images/paintings/mat_1.jpg"
-    alt: "Без названия"
+    alt: "Картина матери с ребенком"
     relative: false
 technique: "Холст, масло"
 ---

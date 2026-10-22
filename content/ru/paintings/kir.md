@@ -5,6 +5,6 @@ draft: false
 translationKey: "kir"
 cover:
     image: "images/paintings/kir.jpg"
-    alt: "Кирилл"
+    alt: "Портрет мальчика в рубашке"
     relative: false
 ---

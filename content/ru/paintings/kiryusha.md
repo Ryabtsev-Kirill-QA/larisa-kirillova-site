@@ -5,6 +5,6 @@ draft: false
 translationKey: "kiryusha"
 cover:
     image: "images/paintings/kiryusha.jpg"
-    alt: "Кирюша"
+    alt: "Портрет мальчика в красном"
     relative: false
 ---

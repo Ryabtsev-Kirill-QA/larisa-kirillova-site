@@ -5,6 +5,6 @@ draft: false
 translationKey: "sever_1"
 cover:
     image: "images/paintings/sever_1.jpg"
-    alt: "Без названия"
+    alt: "Портрет женщины в красном платке"
     relative: false
 ---

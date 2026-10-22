@@ -5,7 +5,7 @@ draft: false
 translationKey: "zhenshina"
 cover:
     image: "images/paintings/zhenshina.jpg"
-    alt: "Без названия"
+    alt: "Портрет женщины в пиджаке"
     relative: false
 technique: "Холст, масло"
 ---

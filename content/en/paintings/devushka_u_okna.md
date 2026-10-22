@@ -11,4 +11,5 @@ cover:
     relative: false
 technique: "Oil on canvas"
 size: "700×1115"
+description: "'Girl by the Window' (1986) by Larisa Kirillova. An intimate portrait of the artist's daughter, held in the collection of the State Museum and Exhibition Center ROSIZO."
 ---

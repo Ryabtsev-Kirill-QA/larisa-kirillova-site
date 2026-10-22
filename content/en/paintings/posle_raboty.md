@@ -11,4 +11,5 @@ cover:
     relative: false
 technique: "Oil on canvas"
 size: "180×209"
+description: "'On the River. After Work' (1985) by Larisa Kirillova. This painting is part of the cycle for which the artist was awarded the prestigious I.E. Repin State Prize of the RSFSR in 1987."
 ---

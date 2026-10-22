@@ -11,4 +11,5 @@ cover:
     relative: false
 technique: "Oil on canvas"
 location: "State Tretyakov Gallery, Moscow"
+description: "'Masha in a Red Dress' (1982) by Larisa Kirillova. A well-known portrait of the artist's daughter, held in the collection of the State Tretyakov Gallery in Moscow."
 ---

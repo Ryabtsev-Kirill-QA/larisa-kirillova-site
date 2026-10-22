@@ -11,4 +11,5 @@ cover:
     relative: false
 technique: "Oil on canvas"
 size: "166×124"
+description: "'Family' (1987) by Larisa Kirillova. A group portrait exploring the themes of family ties, motherhood, and generational continuity."
 ---
