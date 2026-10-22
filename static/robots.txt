@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://larisa-kirillova.ru/sitemap.xml
+Sitemap: https://kirillova-larisa.ru/sitemap.xml
